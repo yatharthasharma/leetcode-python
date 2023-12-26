@@ -1,6 +1,7 @@
 from typing import List
 
 class Solution:
+    # TODO optimise this to use O(1) space
     def product_except_self(self, nums: List[int]) -> List[int]:
         forward_product = [1]
         backward_product = [1] * len(nums)
