@@ -3,9 +3,7 @@ from typing import List
 
 def is_valid_sudoku(board: List[List[str]]) -> bool:
     row_set = set()
-    column_set = []
-    for i in range(9):
-        column_set.append(set())
+    column_set = [set() for _ in range(9)]
     print(column_set)
     block_set = [set(), set(), set()]
     for index_row in range(9):
